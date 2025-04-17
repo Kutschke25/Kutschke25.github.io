@@ -10,10 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
             ${Array.from({length: 10}, (_, i) => `<a href="chapter${i+1}.html">Chapter ${i+1}</a>`).join("")}
           </div>
         </div>
-        <a href="summary.html">Summary</a>
+        <a href="summary.html">Synopsis</a>
         <a href="conclusions.html">Conclusions</a>
         <a href="minutes.html">Minutes</a>
         <a href="timeline.html">Timeline</a>
+        <a href="background.html">Background</a>
       </nav>
     `;
     document.body.prepend(header);
