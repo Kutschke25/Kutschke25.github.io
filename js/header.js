@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="dropdown">
           <button class="dropbtn">Chapters</button>
           <div class="dropdown-content">
-            ${Array.from({length: 10}, (_, i) => `<a href="chapter${i+1}.html">Chapter ${i+1}</a>`).join("")}
+            ${Array.from({length: 8}, (_, i) => `<a href="chapter${i + 3}.html">Chapter ${i + 3}</a>`).join("")}
           </div>
         </div>
         <a href="summary.html">Synopsis</a>
