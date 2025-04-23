@@ -14,7 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
         <a href="conclusions.html">Conclusions</a>
         <a href="minutes.html">Minutes</a>
         <a href="timeline.html">Timeline</a>
-        <a href="background.html">Background</a>
+        <div class="dropdown">
+          <button class="dropbtn">Background</button>
+          <div class="dropdown-content">
+            <a href="interviews.html">Director Interviews</a>
+            <a href="tech-start.html">Tech at the Start of Production</a>
+            <a href="tech-during.html">Tech During Production</a>
+          </div>
+        </div>
       </nav>
     `;
     document.body.prepend(header);
