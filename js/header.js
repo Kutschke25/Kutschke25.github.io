@@ -10,10 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
             ${Array.from({length: 8}, (_, i) => `<a href="chapter${i + 3}.html">Chapter ${i + 3}</a>`).join("")}
           </div>
         </div>
-        <a href="summary.html">Synopsis</a>
-        <a href="conclusions.html">Conclusions</a>
-        <a href="minutes.html">Minutes</a>
-        <a href="timeline.html">Timeline</a>
         <div class="dropdown">
           <button class="dropbtn">Background</button>
           <div class="dropdown-content">
@@ -22,6 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
             <a href="tech-during.html">Tech During Production</a>
           </div>
         </div>
+        <a href="summary.html">Synopsis</a>
+        <a href="conclusions.html">Conclusions</a>
+        <a href="minutes.html">Minutes</a>
+        <a href="timeline.html">Timeline</a>
       </nav>
     `;
     document.body.prepend(header);
