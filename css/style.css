@@ -444,6 +444,7 @@ nav a.active,
 
 /* Hero Overlay */
 .hero-overlay {
+  z-index: 3;
   position: absolute;
   bottom: 0;
   left: 0;
