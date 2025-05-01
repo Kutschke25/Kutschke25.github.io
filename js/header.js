@@ -95,3 +95,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+;(function() {
+  var gaScript = document.createElement('script');
+  gaScript.async = true;
+  gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-8ZKT35B9VR';
+  document.head.appendChild(gaScript);
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ window.dataLayer.push(arguments); }
+  window.gtag = gtag; // expose it globally if you ever need to call it elsewhere
+  gtag('js', new Date());
+  gtag('config', 'G-8ZKT35B9VR');
+})();
