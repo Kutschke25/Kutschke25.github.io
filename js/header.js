@@ -53,6 +53,21 @@ document.addEventListener("DOMContentLoaded", () => {
   // Add header to the page
   document.body.prepend(header);
 
+  const footer = document.createElement("footer");
+
+  // add footer content
+
+  footer.innerHTML = `
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>The Creator Project</h3>
+        </div>
+    </div>
+`;
+
+  // Add footer to page
+  document.body.append(footer);
+
   // Mobile menu toggle functionality
   const menuToggle = header.querySelector('.mobile-menu-toggle');
   const nav = header.querySelector('nav');
