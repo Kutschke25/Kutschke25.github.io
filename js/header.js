@@ -1,4 +1,3 @@
-// header.js
 document.addEventListener("DOMContentLoaded", () => {
   // Create header element
   const header = document.createElement("header");
@@ -18,13 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="dropdown">
         <button class="dropbtn">Chapters</button>
         <div class="dropdown-content">
-            const href = \`chapter${3}.html\`;
+          ${[3, 5, 6, 7, 8].map(chapter => {
+            const href = `chapter${chapter}.html`;
             const isActive = href === currentPage ? 'active' : '';
-            return \`<a href="${href}" class="${isActive}">Chapter ${3}</a>\`;
-          ${Array.from({length: 6}, (_, i) => {
-            const href = `chapter${i + 3}.html`;
-            const isActive = href === currentPage ? 'active' : '';
-            return `<a href="${href}" class="${isActive}">Chapter ${i + 3}</a>`;
+            return `<a href="${href}" class="${isActive}">Chapter ${chapter}</a>`;
           }).join("")}
         </div>
       </div>
