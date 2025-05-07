@@ -18,13 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="dropdown">
         <button class="dropbtn">Chapters</button>
         <div class="dropdown-content">
-            const href = \`chapter${3}.html\`;
-            const isActive = href === currentPage ? 'active' : '';
-            return \`<a href="${href}" class="${isActive}">Chapter ${3}</a>\`;
-          ${Array.from({length: 6}, (_, i) => {
-            const href = `chapter${i + 3}.html`;
-            const isActive = href === currentPage ? 'active' : '';
-            return `<a href="${href}" class="${isActive}">Chapter ${i + 3}</a>`;
+          ${Array.from({length: 8}, (_, i) => {
+            if(i!=4) {
+              const href = `chapter${i + 3}.html`;
+              const isActive = href === currentPage ? 'active' : '';
+              return `<a href="${href}" class="${isActive}">Chapter ${i + 3}</a>`;
+            }
           }).join("")}
         </div>
       </div>
