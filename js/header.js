@@ -18,7 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="dropdown">
         <button class="dropbtn">Chapters</button>
         <div class="dropdown-content">
-          ${Array.from({length: 8}, (_, i) => {
+            const href = \`chapter${3}.html\`;
+            const isActive = href === currentPage ? 'active' : '';
+            return \`<a href="${href}" class="${isActive}">Chapter ${3}</a>\`;
+          ${Array.from({length: 6}, (_, i) => {
             const href = `chapter${i + 3}.html`;
             const isActive = href === currentPage ? 'active' : '';
             return `<a href="${href}" class="${isActive}">Chapter ${i + 3}</a>`;
@@ -31,7 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
           ${[
             { href: "interviews.html", text: "Director Interviews" },
             { href: "tech-start.html", text: "Tech at the Start of Production" },
-            { href: "tech-during.html", text: "Tech During Production" }
           ].map(item => {
             const isActive = item.href === currentPage ? 'active' : '';
             return `<a href="${item.href}" class="${isActive}">${item.text}</a>`;
